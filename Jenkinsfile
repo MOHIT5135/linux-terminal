@@ -22,7 +22,7 @@ pipeline {
         stage('Deploy Services') {
             steps {
                 script {
-                    sh 'docker rm -f  react-app1'
+                    sh 'docker rm -f  mohit5135/linux-terminal'
                     sh 'docker run -d --name linux-terminal-webApp -p 8000:80 mohit5135/linux-terminal'
                 }
             }

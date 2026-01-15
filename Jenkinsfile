@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     sh 'docker rm -f  mohit5135/linux-terminal'
-                    sh 'docker run -d --name linux-terminal-webApp -p 8000:80 mohit5135/linux-terminal'
+                    sh 'docker run -d --name my-linux-terminal -p 8000:80 mohit5135/linux-terminal'
                 }
             }
         }
